@@ -7,6 +7,3 @@ To run it you will need to do the following steps:
 4. You can change running port if you want. You can do this from `PORT` in `.env` file.
 
 5. To run it just type `npm run start`.
-
-
-That is. Enjoy.
