@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background-color: grey;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    left: 0%;
+    top: 0%;
+}
+
+#header h1 {
+    color: white;
+    position: relative;
+    top: 50%;
+    display: inline-block;
+    transform: translate(35px, -50%);
+}
+
+#header i {
+    display: inline-block;
+    position: sticky;
+    float: right;
+    font-size: 30px;
+    top: 50%;
+    color: white;
+    transform: translate(-25px, -50%);
+}
+
+
+#footer {
+    background-color: grey;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    left: 0%;
+    bottom: 0%;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline;
+    position: relative;
+    top: 45%;
+    left: 5%;
+}
+
+#footer span {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline;
+    position: relative;
+    top: 45%;
+    left: 80%;
+}
+
+table {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-collapse: collapse;
+    font-weight: bolder;
+}
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 10px;
+}
+
+td:nth-child(3){
+    min-width: 250px;
+}
+
+tr {
+    cursor: pointer;
+}
+
+tr button {
+    display:inline-block;
+    border: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: lightblue;
+    border-radius: 15px;
+    color: white;
+    margin-right: 10px;
+}
+
+tr button:hover{
+    filter: brightness(0.9);
+}
+
+tr button:active {
+    transform: scale(0.9);
+}
+
+tr select {
+    border: none;
+    padding: 10px;
+    background-color: lightblue;
+    outline: none;
+    border-radius: 15px;
+    color: white;
+}
+tr select:hover{
+    filter: brightness(0.9);
+}
+tr select:active {
+    transform: scale(0.9);
+}
