@@ -8,5 +8,3 @@ To run it you will need to do the following steps:
 4. To run it just type `npm run start`.
 
 If you want to change something of the design -> everything is in the `/src` folder.
-
-That is. Enjoy.
