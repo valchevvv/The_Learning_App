@@ -5,5 +5,3 @@ client - The front-end of this app
 server - The back-end of this app
 
 To run the app properly you need to visit each of theese folders and do the steps that are in their `README.txt` files
-
-That is. Enjoy.
