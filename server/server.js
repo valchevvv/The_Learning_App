@@ -21,13 +21,13 @@ const CourseModel = mongoose.model("course",{
 
 app.use(express.json());
 
+// Get all available courses //
 app.use("/courses", async (req,res) => {
     let data = await CourseModel.find({});
     res.json(data);
 })
 
 
-// Get all available courses //
 app.use("/changeState", async (req,res) => {
     const id = req.query.id;
     var data = await CourseModel.findOne({_id:id});
