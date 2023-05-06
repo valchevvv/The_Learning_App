@@ -6,12 +6,6 @@ import courses, {stateChange, add, edit, remove} from "../composables/api";
 const {data, error, getAllCourses} = courses();
 onMounted(getAllCourses);
 
-function state_change(id, state){
-  if(state == 1) state--;
-  else state++;
-  stateChange(id, state);
-}
-
 function addF(){
   let courseName = "", description = "", lessonsCount = "", dateAdded = "";
   courseName = prompt("Enter course name:");
@@ -98,7 +92,7 @@ function removeF(){
             <td>{{ description }}</td>
             <td>{{ lessonsCount }}</td>
             <td>
-              <select v-if="state" name="" @change="state_change(_id, state);">
+              <select v-if="state" name="" @change="stateChange(_id);">
                 <option value="" selected>Active</option>
                 <option value="">Archive</option>
               </select>
